@@ -113,7 +113,3 @@ warn_precomp 1              # warn when precomputation tables do not exist
 [pre_uv] #n old_q new_q channel fname         # create unit vectors
 2 32 4 0 PRE/PRE_UV_n2_oq32_nq4.dat
 ```
-
-## Protocols
-The library supports protocols poposed in the following papers.
-- 
