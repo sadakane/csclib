@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools", "cython"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "csclib"
+version = "202607311"
+authors = [
+  { name="Kunihiko Sadakane", email="sada@mist.i.u-tokyo.ac.jp" },
+]
+description = "csclib"
+readme = "README.md"

@@ -1,0 +1,111 @@
+[options]
+parties 3
+channels 1
+#comm_no_delay 1
+warn_precomp 1
+[parties]
+127.0.0.1 9800 # server
+127.0.0.1 9810 # party 1
+127.0.0.1 9820 # party 2
+127.0.0.1 9830 # party 3
+[mt_seeds] # party seed*5
+0 123 456 789 0 0
+1 234 567 890 0 1
+2 345 678 234 0 2
+3 456 789 345 0 3
+[pre_bt]
+0 PRE/PRE_BT.dat
+[pre_of]
+1 0 PRE/PRE_OF1.dat
+#2 0 PRE/PRE_OF2.dat
+3 0 PRE/PRE_OF3.dat
+#4 0 PRE/PRE_OF4.dat
+[pre_b2a]
+0 PRE/PRE_B2A.dat
+[pre_onehot] # bits xor channel filename
+#1 0 0 PRE/PRE_OHA1.dat
+#2 0 0 PRE/PRE_OHA2.dat
+#3 0 0 PRE/PRE_OHA3.dat
+#4 0 0 PRE/PRE_OHA4.dat
+[pre_onehot_shamir] # bits channel filename
+1 0 PRE/PRE_OHS1.dat
+2 0 PRE/PRE_OHS2.dat
+3 0 PRE/PRE_OHS3.dat
+4 0 PRE/PRE_OHS4.dat
+#
+[pre_onehot_shamir3] # bits irr_poly channel filename
+#4 0  0 PRE/PRE_OHS3_0.dat
+4 13 0 PRE/PRE_OHS3_0x13.dat
+#
+#
+[pre_onehot_rss] # bits irr_poly channel filename
+4 13 0 PRE/PRE_OHR_0x13.dat
+#
+[pre_shamir3_revert] # bits irr_poly channel filename
+4 13 0 PRE/PRE_RE_13.dat
+#
+[pre_ds] # n bs inverse channel filename
+2 1 0 0 PRE/PRE_DS_n1_w30.dat
+4 1 0 0 PRE/PRE_DS_n2_w30.dat
+8 1 0 0 PRE/PRE_DS_n3_w30.dat
+16 1 0 0 PRE/PRE_DS_n4_w30.dat
+32 1 0 0 PRE/PRE_DS_n5_w30.dat
+64 1 0 0 PRE/PRE_DS_n6_w30.dat
+128 1 0 0 PRE/PRE_DS_n7_w30.dat
+256 1 0 0 PRE/PRE_DS_n8_w30.dat
+512 1 0 0 PRE/PRE_DS_n9_w30.dat
+1024 1 0 0 PRE/PRE_DS_n10_w30.dat
+2048 1 0 0 PRE/PRE_DS_n11_w30.dat
+4096 1 0 0 PRE/PRE_DS_n12_w30.dat
+8192 1 0 0 PRE/PRE_DS_n13_w30.dat
+16384 1 0 0 PRE/PRE_DS_n14_w30.dat
+32768 1 0 0 PRE/PRE_DS_n15_w30.dat
+65536 1 0 0 PRE/PRE_DS_n16_w30.dat
+131072 1 0 0 PRE/PRE_DS_n17_w30.dat
+262144 1 0 0 PRE/PRE_DS_n18_w30.dat
+524288 1 0 0 PRE/PRE_DS_n19_w30.dat
+1048576 1 0 0 PRE/PRE_DS_n20_w30.dat
+2097152 1 0 0 PRE/PRE_DS_n21_w30.dat
+4194304 1 0 0 PRE/PRE_DS_n22_w30.dat
+#8388608 1 0 0 PRE/PRE_DS_n23_w30.dat
+# 16777216 1 0 0 PRE/PRE_DS_n24_w30.dat
+# 33554432 1 0 0 PRE/PRE_DS_n25_w30.dat
+# 67108864 1 0 0 PRE/PRE_DS_n26_w30.dat
+2 1 1 0 PRE/PRE_DSi_n1_w30.dat
+4 1 1 0 PRE/PRE_DSi_n2_w30.dat
+#6 1 1 0 PRE_DSi_6_w30.dat
+8 1 1 0 PRE/PRE_DSi_n3_w30.dat
+16 1 1 0 PRE/PRE_DSi_n4_w30.dat
+32 1 1 0 PRE/PRE_DSi_n5_w30.dat
+64 1 1 0 PRE/PRE_DSi_n6_w30.dat
+128 1 1 0 PRE/PRE_DSi_n7_w30.dat
+256 1 1 0 PRE/PRE_DSi_n8_w30.dat
+512 1 1 0 PRE/PRE_DSi_n9_w30.dat
+1024 1 1 0 PRE/PRE_DSi_n10_w30.dat
+2048 1 1 0 PRE/PRE_DSi_n11_w30.dat
+4096 1 1 0 PRE/PRE_DSi_n12_w30.dat
+8192 1 1 0 PRE/PRE_DSi_n13_w30.dat
+16384 1 1 0 PRE/PRE_DSi_n14_w30.dat
+32768 1 1 0 PRE/PRE_DSi_n15_w30.dat
+65536 1 1 0 PRE/PRE_DSi_n16_w30.dat
+131072 1 1 0 PRE/PRE_DSi_n17_w30.dat
+262144 1 1 0 PRE/PRE_DSi_n18_w30.dat
+524288 1 1 0 PRE/PRE_DSi_n19_w30.dat
+1048576 1 1 0 PRE/PRE_DSi_n20_w30.dat
+2097152 1 1 0 PRE/PRE_DSi_n21_w30.dat
+4194304 1 1 0 PRE/PRE_DSi_n22_w30.dat
+#8388608 1 1 0 PRE/PRE_DSi_n23_w30.dat
+# 16777216 1 1 0 PRE/PRE_DSi_n24_w30.dat
+# 33554432 1 1 0 PRE/PRE_DSi_n25_w30.dat
+# 67108864 1 1 0 PRE/PRE_DSi_n26_w30.dat
+[pre_gf]
+13 0 PRE/PRE_GF_13.dat
+11b 0 PRE/PRE_GF_11b.dat
+[pre_uv] #n old_q new_q channel fname
+2 32 4 0 PRE/PRE_UV_n2_oq32_nq4.dat
+16 32 32 0 PRE/PRE_UV_n16_oq32_nq32.dat
+16 4 32 0 PRE/PRE_UV_n16_oq4_nq32.dat
+1 2 1048576 0 PRE/PRE_UV_q2.dat
+1 4 1048576 0 PRE/PRE_UV_q4.dat
+1 8 1048576 0 PRE/PRE_UV_q8.dat
+1 16 1048576 0 PRE/PRE_UV_q16.dat
