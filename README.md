@@ -2,6 +2,11 @@
 A secure computation library based on secret sharing.
 Two-party additive sharing, three-party Shamir's sharing, and three-party replicated sharing are supported.
 
+## License
+This software may be used freely for any purpose.
+No warranty is given regarding the quality of this software.
+
+
 ## Protocols
 The library supports protocols proposed in the following papers.
 - Nuttapong Attrapadung, Goichiro Hanaoaka, Takahiro Matsuda, Hiraku Morita, Kazuma Ohara, Jacob C. N. Schuldt, Tadanori Teruya, 
@@ -26,6 +31,7 @@ The library supports protocols proposed in the following papers.
   In: Fischlin, M., Moonsamy, V. (eds) Applied Cryptography and Network Security. ACNS 2025. 
   Lecture Notes in Computer Science, vol 15825. Springer, Cham. 
   https://doi.org/10.1007/978-3-031-95761-1_10
+
 
 ## Environment
 Computation is performed on 3 PCs (or 1 PC). They are called `server`, `party_1`, and `party_2`.
@@ -58,13 +64,18 @@ Assuming the executable is `share.out`, run the following on each of the 3 PCs (
 ```
 
 ## Python
+You can install csclib from PyPI.
+```bash
+@server:$ pip install csclib
+```
+
 Compilation and execution instructions.
 ```bash
 @server:$ python3 -m venv env
 @server:$ source env/bin/activate
 @server:$ cd python/csclib
 @server:$ make
-@server:$ pip3 install .
+@server:$ pip install .
 ```
 To compute precomputed tables, in the same directory as config.txt
 ```bash
